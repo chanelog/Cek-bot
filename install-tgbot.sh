@@ -46,10 +46,10 @@ pip3 install pytesseract Pillow -q 2>/dev/null
 
 # ── Download bot script ───────────────────────────────────────
 echo -e "${Y}  ➜  Mengunduh bot script dari GitHub...${N}"
-curl -Ls "https://raw.githubusercontent.com/chanelog/Cek-bot/main/zivpn_bot.py" \
+curl -Ls "https://raw.githubusercontent.com/chanelog/Bot/main/zivpn_bot.py" \
     -o "$BOT_PY" 2>/dev/null || \
 wget -qO "$BOT_PY" \
-    "https://raw.githubusercontent.com/chanelog/Cek-bot/main/zivpn_bot.py" 2>/dev/null
+    "https://raw.githubusercontent.com/chanelog/Bot/main/zivpn_bot.py" 2>/dev/null
 
 # Jika gagal download (repo belum ada), copy dari lokal jika tersedia
 if [[ ! -s "$BOT_PY" ]]; then
